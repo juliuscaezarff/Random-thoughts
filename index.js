@@ -8,6 +8,15 @@ const app = express()
 
 const conn = require('./db/conn')
 
+//template engine
+app.engine('handlebars', exphbs.engine())
+app.set('view engine', 'handlebars')
+
+//receive reply from body
+app.urlencoded({
+  body.json()
+})
+
 conn
   .sync()
   .then(() => {
