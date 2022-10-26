@@ -7,15 +7,20 @@ const flash = require('express-flash')
 const app = express()
 
 const conn = require('./db/conn')
+const { json } = require('sequelize')
 
 //template engine
 app.engine('handlebars', exphbs.engine())
 app.set('view engine', 'handlebars')
 
 //receive reply from body
-app.urlencoded({
-  body.json()
-})
+app.use(
+  express.urlencoded({
+    extended: true,
+  })
+)
+
+app.use(express.json())
 
 conn
   .sync()
