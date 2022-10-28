@@ -1,0 +1,23 @@
+<div class="authContainer">
+  <h2>Registrar</h2>
+  <form action="/register" method="post">
+  <div class="formControl">
+    <label for="name">Nome:</label>
+    <input type="text" name="name" placeholder="Digite o seu nome" required>
+  </div>
+   <div class="formControl">
+    <label for="email">E-mail:</label>
+    <input type="email" name="emal" placeholder="Digite o seu e-mail" required>
+  </div>
+   <div class="formControl">
+    <label for="password">Senha:</label>
+    <input type="password" name="password" placeholder="Digite a sua senha" required>
+  </div>
+   <div class="formControl">
+    <label for="confirmpassword">Confirmar senha:</label>
+    <input type="confirmpassword" name="confirmpassword" placeholder="Confirme a sua senha" required>
+  </div>
+  <input type="submit" value="Cadastrar">
+  <p>Já tem conta? <a href="/login">Clique aqui</a></p>
+  </form>
+</div>
