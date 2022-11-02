@@ -1,1 +1,15 @@
-<h1>Login</h1>
+<div class="authContainer">
+  <h2>Entrar</h2>
+  <form action="/login" method="post">
+    <div class="formControl">
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" placeholder="Digite seu email">
+    </div>
+    <div class="formControl">
+      <label for="senha">Senha:</label>
+      <input type="password" name="senha" placeholder="**********">
+    </div>
+    <input type="submit" value="Entrar">
+    <p>Não tem uma conta? <a href="/register">Clique aqui!</a></p>
+  </form>
+</div>
