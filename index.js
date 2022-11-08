@@ -71,12 +71,13 @@ app.use((req, res, next) => {
 })
 
 // routes
-app.use('/thoughts', toughtsRoutes)
+app.use('/toughts', toughtsRoutes)
 app.use('/', authRoutes)
 
 app.get('/', ToughtsController.showToughts)
 
 conn
+  //.sync({ force: true })
   .sync()
   .then(() => {
     app.listen(8080)})
