@@ -123,6 +123,27 @@ form input[type='submit']:hover,
   color: var(--brand-light);
 }
 
+/* CREATE/EDIT FORM */  
+.thoughtFormContainer a {
+  color: var(--primary-color);
+}
+
+.thoughtFormContainer a:hover {
+  color: var(--brand-light);
+}
+
+.thoughtFormContainer h1 {
+  margin: 1em 0;
+  color: #fff;
+  border-left: 4px solid var(--primary-color);
+  padding: 0.3em;
+}
+
+.thoughtFormContainer form {
+  max-width: 30%;
+  margin-top: 1.5em;
+}
+
 /* FOOTER */
 footer {
   height: 150px;
