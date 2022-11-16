@@ -191,6 +191,94 @@ form input[type='submit']:hover,
   color: var(--primary-color);
 }
 
+/* Home */
+.homeHeader {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.homeHeader h1 {
+  margin-bottom: 1em;
+}
+
+.homeHeader span {
+  color: var(--primary-color);
+}
+
+.homeHeader p,
+.homeHeader form {
+  margin-bottom: 1.2em;
+}
+
+.homeHeader input {
+  border: none;
+  border-bottom: 1px solid var(--brand-light);
+  padding: 0.5em;
+  margin-right: 1em;
+}
+
+.homeHeader input[type="text"] {
+  width: 60%;
+}
+
+.homeHeader input::placeholder {
+  color: var(--brand-light);
+}
+
+.orderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto 1em;
+}
+
+.orderContainer span {
+  font-weight: bold;
+  color: var(--brand-light);
+}
+
+.orderContainer form {
+  margin: 0;
+}
+
+.orderContainer button {
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.orderContainer button:hover,
+.orderContainer i:hover,
+.orderContainer a:hover{
+  color: var(--primary-color);
+}
+
+.orderContainer button,
+.orderContainer i,
+.orderContainer a {
+  margin: 0 7px;
+}
+
+.toughtsContainer figure {
+  border-bottom: 1px solid #333;
+  padding: .5em;
+  max-width: 50%;
+  margin: 0 auto 1em;
+}
+
+.toughtsContainer blockquote {
+  font-style: italic;
+  margin-bottom: 0.4em;
+}
+
+.toughtsContainer span {
+  color: var(--primary-color);
+}
+
 /* FOOTER */
 footer {
   height: 150px;
